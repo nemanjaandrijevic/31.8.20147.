@@ -1,0 +1,366 @@
+
+body {
+    background-color: $body-background;
+}
+
+@mixin centerContent() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.live-bet {
+    font-family: 'Roboto Condensed', sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    margin: 0 auto;
+    border: 1px solid $border-color;
+}
+
+
+.divRow {
+    width: 100%;
+    height: 40px;
+    line-height: 20px;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid $border-color;
+}
+
+.divCell-play-gest-position {
+    padding-top: 5px;
+    padding-bottom: 1px;
+}
+
+.divCell-play-host-position {
+    padding-top: 1px;
+    padding-bottom: 5px;
+}
+
+.div-color:nth-child(odd) {
+    background-color: $divRov-even-background;
+    color: $host-gest-color;
+}
+
+.div-color:nth-child(even) {
+    background-color: $divRov-odd-background;
+    color: $host-gest-color;
+}
+
+.winner {
+    font-weight: bold;
+}
+
+.no-betting {
+    opacity: 0.3;
+}
+
+.p-1-color,
+.ki-1-color {
+    color: $text-color-yellow;
+}
+
+.set-metch {
+    width: 48px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    text-align: center;
+    flex: 1 0 auto;
+    color: $text-color-yellow;
+    border-right: 1px solid $border-color;
+}
+
+.finished-set {
+    text-transform: uppercase;
+    // font-weight: bold;
+    color: red; //pozicioniranje
+}
+
+.divRow-play {
+    display: flex;
+    flex-direction: column;
+    height: 40px;
+    width: 100%;
+    border-right: 1px solid $border-color;
+}
+
+.divCell-play {
+    display: flex;
+    flex-direction: row;
+    font-size: 13px;
+}
+
+.dot {
+    width: 10px;
+    margin: 0 8px;
+
+    img {
+        width: 8px;
+    }
+}
+
+.name {
+    flex: 1 0 auto;
+    font-size: 13px;
+}
+
+.ki-1 {
+    width: 16px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.s-1 {
+    width: 16px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.p-1 {
+    width: 16px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.i-1 {
+    width: 16px;
+    height: 24px;
+}
+
+.message {
+    display: flex;
+    flex: 0 0 585px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 297px;
+    height: 40px;
+    font-size: 10px;
+}
+
+.message-1 {
+    height: 40px;
+    font-size: 10px;
+    line-height: 40px;
+}
+
+.message-2 {
+    height: 40px;
+    font-size: 14px;
+    color: red;
+    font-weight: bold;
+    line-height: 40px;
+    padding-left: 10px;
+}
+
+.quotes-gem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 0 0 90px;
+    max-width: 90px;
+    height: 40px;
+    border-right: 1px solid $border-color;
+}
+
+.quote {
+    flex: 1 0 45px;
+}
+
+.quotes-set {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 90px;
+    max-width: 90px;
+    height: 40px;
+    border-right: 1px solid $border-color;
+
+    // move it out
+    .quotes-header {
+        height: 12px;
+        font-size: 10px;
+        text-align: center;
+        line-height: 12px;
+        background-color: $first-second-gem-background;
+    }
+    .quotes {
+        flex:1;
+        display:flex;
+        flex-direction: row;
+    }
+}
+
+// ------------
+// quotes
+// ------------
+
+.quotes-cell {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+
+    .quotes-header {
+        height: 12px;
+        font-size: 10px;
+        text-align: center;
+        line-height: 12px;
+        background-color: $first-second-gem-background;
+    }
+
+    .quotes {
+        flex:1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+
+        .quote {
+            flex:1;
+            position: relative;
+            box-sizing: border-box;
+            display: block;
+            padding: 8px 0;
+            height: 30px;
+            line-height: 16px;
+            font-size: 14px;
+            text-align:center;
+
+          &:before,
+          &:after {
+            content: '';
+            display: none;
+            position: absolute;
+            left:50%;
+            width: 8px;
+            height:4px;
+            margin-left:-4px;
+          }
+
+          &:before {
+            top:3px;
+            background: url("../images/quote-up.png");
+            background-size: 100%;
+          }
+
+          &:after {
+            bottom:3px;
+            background: url("../images/quote-down.png");
+            background-size: 100%;
+          }
+
+          &.up {
+            color: $text-color-green;
+
+            &:before {
+              display: block;
+            }
+
+          }
+
+          &.down {
+            color:  $text-color-red;
+
+            &:after {
+              display: block;
+            }
+          }
+
+        }
+    }
+}
+
+
+.quotes-cell-match {
+    flex: 0 0 90px;
+    max-width: 90px;
+    border-right: 1px solid $border-color;
+}
+
+.quotes-cell-set {
+    flex: 0 0 90px;
+    max-width: 90px;
+    border-right: 1px solid $border-color;
+}
+
+.quotes-cell-gems {
+    flex: 0 0 117px;
+    max-width: 117px;
+
+    .quote {
+
+        &.quote-x {
+            color: $text-color-yellow;
+        }
+    }
+}
+
+.gem-set {
+
+    color: $h1-font;
+    background-color: $less-more;
+
+    .quotes {
+        flex:1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+
+        .quote {
+            flex:1 0 auto;
+            position: relative;
+            box-sizing: border-box;
+            display: block;
+            padding: 8px 0;
+            height: 30px;
+            line-height: 16px;
+            font-size: 14px;
+            text-align:center;
+
+          &:before,
+          &:after {
+            content: '';
+            display: none;
+            position: absolute;
+            left:50%;
+            width: 8px;
+            height:4px;
+            margin-left:-4px;
+          }
+
+          &:before {
+            top:3px;
+            background: url("../images/quote-up.png");
+            background-size: 100%;
+          }
+
+          &:after {
+            bottom:3px;
+            background: url("../images/quote-down.png");
+            background-size: 100%;
+          }
+
+          &.up {
+            color: $text-color-green;
+
+            &:before {
+              display: block;
+            }
+
+          }
+
+          &.down {
+            color:  $text-color-red;
+
+            &:after {
+              display: block;
+            }
+          }
+
+        }
+    }
+}
