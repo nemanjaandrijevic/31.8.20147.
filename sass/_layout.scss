@@ -14,7 +14,7 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
     display: flex;
     flex-direction: column;
-    width: 900px;
+    width: 850px;
     margin: 0 auto;
     border: 1px solid $border-color;
 }
@@ -28,16 +28,6 @@ body {
     display: flex;
     align-items: center;
     border-bottom: 1px solid $border-color;
-}
-
-.divCell-play-gest-position {
-    padding-top: 5px;
-    padding-bottom: 1px;
-}
-
-.divCell-play-host-position {
-    padding-top: 1px;
-    padding-bottom: 5px;
 }
 
 .div-color:nth-child(odd) {
@@ -58,12 +48,30 @@ body {
     opacity: 0.3;
 }
 
-.p-1-color,
+.lock {
+    flex: 0 0 20px;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 5px;
+    img {
+        width: 15px;
+    }
+}
+
+.set-metch {
+    .no-betting {
+        flex: 0 0 20px;
+        line-height: 15px;
+    }
+}
+
 .ki-1-color {
     color: $text-color-yellow;
 }
 
 .set-metch {
+    display: flex;
+    flex-direction: column;
     width: 48px;
     height: 40px;
     line-height: 40px;
@@ -95,11 +103,16 @@ body {
 }
 
 .dot {
-    width: 10px;
+    display: flex;
+    flex: 0 0 16px;
     margin: 0 8px;
 
-    img {
-        width: 8px;
+    .red-two {
+        width: 16px;
+        background-color: $text-color-red;
+        color: $host-gest-color;
+        text-align: center;
+        // images/dot.png
     }
 }
 
@@ -217,6 +230,11 @@ body {
         flex-direction: row;
         align-items: center;
 
+        border-right: 1px solid $border-color;
+
+        .quotes:last-child {
+            border: none;
+        }
 
         .quote {
             flex:1;
@@ -242,13 +260,13 @@ body {
 
           &:before {
             top:3px;
-            background: url("../images/quote-up.png");
+            // background: url("../images/quote-up.png");
             background-size: 100%;
           }
 
           &:after {
             bottom:3px;
-            background: url("../images/quote-down.png");
+            // background: url("../images/quote-down.png");
             background-size: 100%;
           }
 
@@ -290,12 +308,12 @@ body {
     flex: 0 0 117px;
     max-width: 117px;
 
-    .quote {
-
-        &.quote-x {
-            color: $text-color-yellow;
-        }
-    }
+    // .quote {
+    //
+    //     &.quote-x {
+    //         color: $text-color-yellow;
+    //     }
+    // }
 }
 
 .gem-set {
@@ -308,7 +326,6 @@ body {
         display: flex;
         flex-direction: row;
         align-items: center;
-
 
         .quote {
             flex:1 0 auto;
