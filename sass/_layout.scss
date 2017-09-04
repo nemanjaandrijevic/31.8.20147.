@@ -45,7 +45,21 @@ body {
 }
 
 .no-betting {
-    opacity: 0.3;
+
+
+    .time {
+        opacity: 0.3;
+    }
+
+    .divRow-play {
+        opacity: 0.3;
+    }
+
+}
+
+.time {
+    height: 20px;
+    line-height: 10px;
 }
 
 .lock {
@@ -89,6 +103,7 @@ body {
 }
 
 .divRow-play {
+    justify-content: center;
     display: flex;
     flex-direction: column;
     height: 40px;
@@ -100,15 +115,17 @@ body {
     display: flex;
     flex-direction: row;
     font-size: 13px;
+    height: 13px;
+    line-height: 13px;
 }
 
 .dot {
     display: flex;
-    flex: 0 0 16px;
+    flex: 0 0 10px;
     margin: 0 8px;
 
     .red-two {
-        width: 16px;
+        width: 10px;
         background-color: $text-color-red;
         color: $host-gest-color;
         text-align: center;
@@ -232,7 +249,7 @@ body {
 
         border-right: 1px solid $border-color;
 
-        .quotes:last-child {
+        &.quotes:last-child {
             border: none;
         }
 

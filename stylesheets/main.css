@@ -110,35 +110,45 @@ body {
   font-weight: bold;
 }
 
-/* line 47, ../sass/_layout.scss */
-.no-betting {
+/* line 50, ../sass/_layout.scss */
+.no-betting .time {
+  opacity: 0.3;
+}
+/* line 54, ../sass/_layout.scss */
+.no-betting .divRow-play {
   opacity: 0.3;
 }
 
-/* line 51, ../sass/_layout.scss */
+/* line 60, ../sass/_layout.scss */
+.time {
+  height: 20px;
+  line-height: 10px;
+}
+
+/* line 65, ../sass/_layout.scss */
 .lock {
   flex: 0 0 20px;
   height: 20px;
   line-height: 20px;
   margin-top: 5px;
 }
-/* line 56, ../sass/_layout.scss */
+/* line 70, ../sass/_layout.scss */
 .lock img {
   width: 15px;
 }
 
-/* line 62, ../sass/_layout.scss */
+/* line 76, ../sass/_layout.scss */
 .set-metch .no-betting {
   flex: 0 0 20px;
   line-height: 15px;
 }
 
-/* line 68, ../sass/_layout.scss */
+/* line 82, ../sass/_layout.scss */
 .ki-1-color {
   color: #fdb417;
 }
 
-/* line 72, ../sass/_layout.scss */
+/* line 86, ../sass/_layout.scss */
 .set-metch {
   display: flex;
   flex-direction: column;
@@ -152,14 +162,15 @@ body {
   border-right: 1px solid #213443;
 }
 
-/* line 85, ../sass/_layout.scss */
+/* line 99, ../sass/_layout.scss */
 .finished-set {
   text-transform: uppercase;
   color: red;
 }
 
-/* line 91, ../sass/_layout.scss */
+/* line 105, ../sass/_layout.scss */
 .divRow-play {
+  justify-content: center;
   display: flex;
   flex-direction: column;
   height: 40px;
@@ -167,61 +178,63 @@ body {
   border-right: 1px solid #213443;
 }
 
-/* line 99, ../sass/_layout.scss */
+/* line 114, ../sass/_layout.scss */
 .divCell-play {
   display: flex;
   flex-direction: row;
   font-size: 13px;
+  height: 13px;
+  line-height: 13px;
 }
 
-/* line 105, ../sass/_layout.scss */
+/* line 122, ../sass/_layout.scss */
 .dot {
   display: flex;
-  flex: 0 0 16px;
+  flex: 0 0 10px;
   margin: 0 8px;
 }
-/* line 110, ../sass/_layout.scss */
+/* line 127, ../sass/_layout.scss */
 .dot .red-two {
-  width: 16px;
+  width: 10px;
   background-color: #a81812;
   color: #d5dae0;
   text-align: center;
 }
 
-/* line 119, ../sass/_layout.scss */
+/* line 136, ../sass/_layout.scss */
 .name {
   flex: 1 0 auto;
   font-size: 13px;
 }
 
-/* line 124, ../sass/_layout.scss */
+/* line 141, ../sass/_layout.scss */
 .ki-1 {
   width: 16px;
   font-size: 13px;
   text-align: center;
 }
 
-/* line 130, ../sass/_layout.scss */
+/* line 147, ../sass/_layout.scss */
 .s-1 {
   width: 16px;
   font-size: 13px;
   text-align: center;
 }
 
-/* line 136, ../sass/_layout.scss */
+/* line 153, ../sass/_layout.scss */
 .p-1 {
   width: 16px;
   font-size: 13px;
   text-align: center;
 }
 
-/* line 142, ../sass/_layout.scss */
+/* line 159, ../sass/_layout.scss */
 .i-1 {
   width: 16px;
   height: 24px;
 }
 
-/* line 147, ../sass/_layout.scss */
+/* line 164, ../sass/_layout.scss */
 .message {
   display: flex;
   flex: 0 0 585px;
@@ -233,14 +246,14 @@ body {
   font-size: 10px;
 }
 
-/* line 158, ../sass/_layout.scss */
+/* line 175, ../sass/_layout.scss */
 .message-1 {
   height: 40px;
   font-size: 10px;
   line-height: 40px;
 }
 
-/* line 164, ../sass/_layout.scss */
+/* line 181, ../sass/_layout.scss */
 .message-2 {
   height: 40px;
   font-size: 14px;
@@ -250,7 +263,7 @@ body {
   padding-left: 10px;
 }
 
-/* line 173, ../sass/_layout.scss */
+/* line 190, ../sass/_layout.scss */
 .quotes-gem {
   display: flex;
   flex-direction: row;
@@ -261,12 +274,12 @@ body {
   border-right: 1px solid #213443;
 }
 
-/* line 183, ../sass/_layout.scss */
+/* line 200, ../sass/_layout.scss */
 .quote {
   flex: 1 0 45px;
 }
 
-/* line 187, ../sass/_layout.scss */
+/* line 204, ../sass/_layout.scss */
 .quotes-set {
   display: flex;
   flex-direction: column;
@@ -275,7 +288,7 @@ body {
   height: 40px;
   border-right: 1px solid #213443;
 }
-/* line 196, ../sass/_layout.scss */
+/* line 213, ../sass/_layout.scss */
 .quotes-set .quotes-header {
   height: 12px;
   font-size: 10px;
@@ -283,20 +296,20 @@ body {
   line-height: 12px;
   background-color: #030a11;
 }
-/* line 203, ../sass/_layout.scss */
+/* line 220, ../sass/_layout.scss */
 .quotes-set .quotes {
   flex: 1;
   display: flex;
   flex-direction: row;
 }
 
-/* line 214, ../sass/_layout.scss */
+/* line 231, ../sass/_layout.scss */
 .quotes-cell {
   display: flex;
   flex-direction: column;
   min-height: 100%;
 }
-/* line 219, ../sass/_layout.scss */
+/* line 236, ../sass/_layout.scss */
 .quotes-cell .quotes-header {
   height: 12px;
   font-size: 10px;
@@ -304,7 +317,7 @@ body {
   line-height: 12px;
   background-color: #030a11;
 }
-/* line 227, ../sass/_layout.scss */
+/* line 244, ../sass/_layout.scss */
 .quotes-cell .quotes {
   flex: 1;
   display: flex;
@@ -312,11 +325,11 @@ body {
   align-items: center;
   border-right: 1px solid #213443;
 }
-/* line 235, ../sass/_layout.scss */
-.quotes-cell .quotes .quotes:last-child {
+/* line 252, ../sass/_layout.scss */
+.quotes-cell .quotes.quotes:last-child {
   border: none;
 }
-/* line 239, ../sass/_layout.scss */
+/* line 256, ../sass/_layout.scss */
 .quotes-cell .quotes .quote {
   flex: 1;
   position: relative;
@@ -328,7 +341,7 @@ body {
   font-size: 14px;
   text-align: center;
 }
-/* line 250, ../sass/_layout.scss */
+/* line 267, ../sass/_layout.scss */
 .quotes-cell .quotes .quote:before, .quotes-cell .quotes .quote:after {
   content: '';
   display: none;
@@ -338,66 +351,66 @@ body {
   height: 4px;
   margin-left: -4px;
 }
-/* line 261, ../sass/_layout.scss */
+/* line 278, ../sass/_layout.scss */
 .quotes-cell .quotes .quote:before {
   top: 3px;
   background-size: 100%;
 }
-/* line 267, ../sass/_layout.scss */
+/* line 284, ../sass/_layout.scss */
 .quotes-cell .quotes .quote:after {
   bottom: 3px;
   background-size: 100%;
 }
-/* line 273, ../sass/_layout.scss */
+/* line 290, ../sass/_layout.scss */
 .quotes-cell .quotes .quote.up {
   color: #22965c;
 }
-/* line 276, ../sass/_layout.scss */
+/* line 293, ../sass/_layout.scss */
 .quotes-cell .quotes .quote.up:before {
   display: block;
 }
-/* line 282, ../sass/_layout.scss */
+/* line 299, ../sass/_layout.scss */
 .quotes-cell .quotes .quote.down {
   color: #a81812;
 }
-/* line 285, ../sass/_layout.scss */
+/* line 302, ../sass/_layout.scss */
 .quotes-cell .quotes .quote.down:after {
   display: block;
 }
 
-/* line 295, ../sass/_layout.scss */
+/* line 312, ../sass/_layout.scss */
 .quotes-cell-match {
   flex: 0 0 90px;
   max-width: 90px;
   border-right: 1px solid #213443;
 }
 
-/* line 301, ../sass/_layout.scss */
+/* line 318, ../sass/_layout.scss */
 .quotes-cell-set {
   flex: 0 0 90px;
   max-width: 90px;
   border-right: 1px solid #213443;
 }
 
-/* line 307, ../sass/_layout.scss */
+/* line 324, ../sass/_layout.scss */
 .quotes-cell-gems {
   flex: 0 0 117px;
   max-width: 117px;
 }
 
-/* line 319, ../sass/_layout.scss */
+/* line 336, ../sass/_layout.scss */
 .gem-set {
   color: #dcffef;
   background-color: #5d5d5d;
 }
-/* line 324, ../sass/_layout.scss */
+/* line 341, ../sass/_layout.scss */
 .gem-set .quotes {
   flex: 1;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-/* line 330, ../sass/_layout.scss */
+/* line 347, ../sass/_layout.scss */
 .gem-set .quotes .quote {
   flex: 1 0 auto;
   position: relative;
@@ -409,7 +422,7 @@ body {
   font-size: 14px;
   text-align: center;
 }
-/* line 341, ../sass/_layout.scss */
+/* line 358, ../sass/_layout.scss */
 .gem-set .quotes .quote:before, .gem-set .quotes .quote:after {
   content: '';
   display: none;
@@ -419,31 +432,31 @@ body {
   height: 4px;
   margin-left: -4px;
 }
-/* line 352, ../sass/_layout.scss */
+/* line 369, ../sass/_layout.scss */
 .gem-set .quotes .quote:before {
   top: 3px;
   background: url("../images/quote-up.png");
   background-size: 100%;
 }
-/* line 358, ../sass/_layout.scss */
+/* line 375, ../sass/_layout.scss */
 .gem-set .quotes .quote:after {
   bottom: 3px;
   background: url("../images/quote-down.png");
   background-size: 100%;
 }
-/* line 364, ../sass/_layout.scss */
+/* line 381, ../sass/_layout.scss */
 .gem-set .quotes .quote.up {
   color: #22965c;
 }
-/* line 367, ../sass/_layout.scss */
+/* line 384, ../sass/_layout.scss */
 .gem-set .quotes .quote.up:before {
   display: block;
 }
-/* line 373, ../sass/_layout.scss */
+/* line 390, ../sass/_layout.scss */
 .gem-set .quotes .quote.down {
   color: #a81812;
 }
-/* line 376, ../sass/_layout.scss */
+/* line 393, ../sass/_layout.scss */
 .gem-set .quotes .quote.down:after {
   display: block;
 }
@@ -692,7 +705,7 @@ header {
   align-items: center;
   text-align: center;
   font-size: 14px;
-  height: 56px;
+  height: 50px;
   width: 117px;
   background-color: #030a11;
   color: #d5dae0;
